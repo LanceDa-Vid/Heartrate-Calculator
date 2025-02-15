@@ -18,7 +18,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <queries>
-        <package android:name="com.google.android.apps.healthconnect" />
+        <package android:name="com.google.android.apps.healthdata" />
     </queries>
 
     <application
