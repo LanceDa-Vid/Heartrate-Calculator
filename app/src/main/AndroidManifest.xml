@@ -16,6 +16,10 @@
     <uses-permission android:name="android.PERMISSION_WRITE_HEART_RATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:node="remove" />
+
 
     <queries>
         <package android:name="com.google.android.apps.healthdata" />
@@ -30,7 +34,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MAPD721A2SanniDavid"
-        tools:targetApi="31">
+        tools:targetApi="34">
         <activity
             android:name=".MainActivity"
             android:exported="true"

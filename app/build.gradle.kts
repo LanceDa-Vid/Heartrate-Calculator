@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.mapd721_a2_sannidavid"
-        minSdk = 28
+        minSdk = 30
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -42,8 +42,11 @@ android {
 dependencies {
 
 
+    implementation(libs.androidx.animation.core.lint)
+    implementation(libs.androidx.espresso.core)
     val composeBom = platform("androidx.compose:compose-bom:2024.02.00")
     implementation(composeBom)
+    implementation("androidx.health:health-services-client:1.1.0-alpha05")
     implementation("androidx.health.connect:connect-client:1.1.0-alpha11") // Ensure this is the correct version
     implementation(platform("androidx.compose:compose-bom:2024.02.00"))
     implementation("androidx.activity:activity-compose:1.8.2")
@@ -81,3 +84,4 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
+
